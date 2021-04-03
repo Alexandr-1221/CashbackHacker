@@ -3,7 +3,6 @@ package ru.netology.service;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class CashbackHackServiceJUnitJupiterTest {
 
@@ -36,7 +35,7 @@ public class CashbackHackServiceJUnitJupiterTest {
     @Test
     public void shouldRemainIfOverThousand(){
         int actual = service.remain(1001);
-        int expected = 0;
+        int expected = 999;
 
         assertEquals(actual, expected);
     }
